@@ -2,9 +2,9 @@ package events;
 
 import models.Record;
 
-public class Load<K, V> extends Event<K, V> {
+public class Load<KEY, VALUE> extends Event<KEY, VALUE> {
 
-    public Load(Record<K, V> element, long timestamp) {
+    public Load(Record<KEY, VALUE> element, long timestamp) {
         super(element, timestamp);
     }
 }

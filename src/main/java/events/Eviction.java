@@ -2,24 +2,24 @@ package events;
 
 import models.Record;
 
-import Enums.Type;
+import enums.EvictionType;
 
 public class Eviction<K, V> extends Event<K, V> {
-    private final Type type;
+    private final EvictionType evictionType;
 
-    public Eviction(Record<K, V> element, Type type, long timeStamp) {
+    public Eviction(Record<K, V> element, EvictionType evictionType, long timeStamp) {
         super(element, timeStamp);
-        this.type = type;
+        this.evictionType = evictionType;
     }
 
-    public Type getType() {
-        return type;
+    public EvictionType getType() {
+        return evictionType;
     }
 
     @Override
     public String toString() {
         return "Eviction{" +
-                "type=" + type +
+                "type=" + evictionType +
                 ", "+super.toString() +
                 "}\n";
     }

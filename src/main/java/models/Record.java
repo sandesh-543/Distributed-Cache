@@ -43,4 +43,8 @@ public class Record<KEY, VALUE> {
                 ", accessDetails=" + accessDetails +
                 '}';
     }
+
+    public void setAccessDetails(AccessDetails updatedAccessDetails) {
+        this.accessDetails = updatedAccessDetails;
+    }
 }
