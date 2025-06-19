@@ -102,15 +102,15 @@ cache.set("foo", "newValue");
 
 ---
 
-[//]: # (## Upcoming Improvements)
+## Upcoming Improvements
 
-[//]: # ()
-[//]: # (- **Distributed coordination** &#40;e.g., Redis or gRPC for multi-instance coherency&#41;)
 
-[//]: # (- **Cache backplane** for cross-node cache consistency)
+- **Distributed coordination** (e.g., Redis or gRPC for multi-instance coherency)
 
-[//]: # (- **Background refresh** or soft TTL extensions)
+- **Cache backplane** for cross-node cache consistency
 
-[//]: # (- **Usage metrics / observability hooks**)
+- **Background refresh** or soft TTL extensions
 
-[//]: # (- **More fetch policies** &#40;refresh ahead, cache stampede prevention&#41;)
+- **Usage metrics / observability hooks**
+
+- **More fetch policies** (refresh ahead, cache stampede prevention)
